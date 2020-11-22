@@ -1,0 +1,8 @@
+# IntelliJ Profil
+.idea
+
+# locale binaries
+/composer.phar
+/vendor/
+/.phpunit.result.cache
+/composer.lock

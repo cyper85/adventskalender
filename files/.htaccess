@@ -1,0 +1,6 @@
+# Prevent viewing files
+Order allow,deny
+Deny from all
+
+# Prevent directory listings
+Options All -Indexes
