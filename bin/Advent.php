@@ -16,7 +16,7 @@ class Advent
         return time();
     }
 
-    final private static function json_response(array $status): void
+    private static function json_response(array $status): void
     {
         header('Content-Type: application/json');
         http_response_code($status['http_status_code']);
