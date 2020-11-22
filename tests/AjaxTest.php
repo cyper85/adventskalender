@@ -128,7 +128,7 @@ class AjaxTest extends TestCase
         $first_of_december = mktime(0, 0, 0, 12, 1, YEAR);
         $advent = new AdventWithManipulatedNow($first_of_december);
         //File aus Array löschen, falls vorhanden
-        $advent->advent_files[1] = "../test/test.txt";
+        $advent->advent_files[1] = "../tests/test.txt";
 
         $advent->open_door(1, false);
         $json = json_decode($this->getActualOutput(), true);
