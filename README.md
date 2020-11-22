@@ -7,7 +7,7 @@ Es soll geprÃ¼ft werden, ob die Datei schon exisitiert, da sie vllt. erst verspÃ
 Das Programm soll auf einem Linux-Server mit PHP laufen.
 
 ## Vorraussetzungen
-* WebServer mit PHP>=7.1
+* WebServer mit PHP>=7.4
 * Editor zum Anpassen der ```bin/config.php```
 
 ## Installation
