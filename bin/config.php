@@ -1,8 +1,8 @@
 <?php
 
 const ADVENT_FILES = array(
-    1 => "../files/uno.doc",
-    2 => "../files/deux.txt",
+    1 => __DIR__ . "/../files/uno.doc",
+    2 => __DIR__ . "/../files/deux.txt",
 );
 
 const YEAR= 2020;

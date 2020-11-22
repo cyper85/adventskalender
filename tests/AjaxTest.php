@@ -128,7 +128,7 @@ class AjaxTest extends TestCase
         $first_of_december = mktime(0, 0, 0, 12, 1, YEAR);
         $advent = new AdventWithManipulatedNow($first_of_december);
         //File aus Array löschen, falls vorhanden
-        $advent->advent_files[1] = "../tests/test.txt";
+        $advent->advent_files[1] = __DIR__."/../tests/test.txt";
 
         $advent->open_door(1, false);
         $json = json_decode($this->getActualOutput(), true);
@@ -146,8 +146,8 @@ class AdventWithManipulatedNow extends Advent
         $this->testDate = $timestamp;
     }
 
-    protected function now(): int
+    final protected function now(): int
     {
-        return (int)$this->testDate;
+        return (int) $this->testDate;
     }
 }
