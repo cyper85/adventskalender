@@ -27,7 +27,7 @@ class Advent
         echo json_encode($data);
     }
 
-    final public function open_door(?int $monthday, bool $download): void
+    final public function open_door(?int $monthday, ?bool $download): void
     {
         // Prüfe ob ordentlicher Wert übermittelt wurde
         if (!filter_var($monthday, FILTER_VALIDATE_INT, array("options" => array("min_range" => 1, "max_range" => 31)))) {
